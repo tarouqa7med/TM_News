@@ -190,5 +190,12 @@ nav.pagination ul {
         width: fit-content !important;
 }
 nav.pagination ul li a {
+        padding: 15px 20px;
         box-shadow: none !important;
+        color: white;
+        background: linear-gradient(45deg, #002424, #007070);
+}
+nav.pagination ul li.active a {
+        background: linear-gradient(#967b58);
+        border: 1px solid #967b58;
 }

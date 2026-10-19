@@ -60,12 +60,12 @@ function returnCard(item) {
                 <div class="col-lg-4 mb-5">
                         <div class="item">
                                 <div class="card text-light overflow-hidden">
-                                        <img class="mb-3" src="${item.urlToImage}" alt="" style="aspect-ratio: 16/9">
+                                        <img class="mb-4" src="${item.urlToImage}" alt="" style="aspect-ratio: 16/9">
                                         <h4 class="px-3 mb-3 title">${item.title.slice(0, 30)}...</h2>
                                         <h6 class="px-3 mb-3 description">${item.description}</h6>
                                         <h6 class="px-3 mb-3 publishedAt">Publication Date : ${item.publishedAt}</h6>
                                         <h6 class="px-3 mb-3 source">Source : ${item.source.name}</h6>
-                                        <a href="${item.url}" target="_blank" class="btn d-block m-auto mt-2 mb-3">
+                                        <a href="${item.url}" target="_blank" class="btn d-block m-auto mt-2 mb-4">
                                                 <span>See More</span>
                                         </a>
                                 </div>

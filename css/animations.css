@@ -1,0 +1,95 @@
+
+@keyframes stroke-draw {
+        0% {
+                fill: black;
+                stroke: white;
+                stroke-dashoffset: 25%;
+                stroke-dasharray: 0 50%;
+                stroke-width: 2;
+        }
+        70% {
+                fill: black;
+                stroke: white;
+        }
+        80% {
+                fill: black;
+                stroke: white;
+                stroke-width: 3;
+        }
+        100% {
+                fill: whitesmoke;
+                stroke: rgba(54,95,160,0);
+                stroke-dashoffset: -25%;
+                stroke-dasharray: 50% 0;
+                stroke-width: 0;
+        }
+}
+@keyframes div1 {
+        0% {
+                top: 50%;
+                right: 0%;
+                transform: translateY(-50%) rotate(0deg);
+        } 50% {
+                top: 50%;
+                right: 80%;
+                transform: translateY(-50%) rotate(720deg);
+        } 100% {
+                top: 50%;
+                right: 0%;
+                transform: translateY(-50%) rotate(1440deg);
+        }
+}
+@keyframes div2 {
+        0% {
+                top: 0%;
+                right: 50%;
+                transform: translateX(-50%) rotate(0deg);
+        } 50% {
+                top: 80%;
+                right: 50%;
+                transform: translateX(-50%) rotate(-720deg);
+        } 100% {
+                top: 0%;
+                right: 50%;
+                transform: translateX(-50%) rotate(-1440deg);
+        }
+}
+@keyframes div3 {
+        0% {
+                top: 50%;
+                left: 0%;
+                transform: translateY(-50%) rotate(0deg);
+        } 50% {
+                top: 50%;
+                left: 80%;
+                transform: translateY(-50%) rotate(-720deg);
+        } 100% {
+                top: 50%;
+                left: 0%;
+                transform: translateY(-50%) rotate(-1440deg);
+        }
+}
+@keyframes div4 {
+        0% {
+                top: 0%;
+                left: 75%;
+                transform: translateX(-50%) rotate(0deg);
+        } 50% {
+                top: 80%;
+                left: 75%;
+                transform: translateX(-50%) rotate(720deg);
+        } 100% {
+                top: 0%;
+                left: 75%;
+                transform: translateX(-50%) rotate(1440deg);
+        }
+}
+@keyframes div5 {
+        0% {
+                transform: translateX(-50%) translateY(0) rotate(0deg);
+        } 50% {
+                transform: translateX(-50%) translateY(-300px) rotate(360deg);
+        } 100% {
+                transform: translateX(-50%) translateY(0) rotate(720deg);
+        }
+}

@@ -1,0 +1,194 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap");
+
+.nav {
+        background: #89704f;
+}
+.nav .animated-text {
+        background-color: transparent;
+        height: 100px;
+}
+.nav .animated-text svg {
+        font-family: "Rubik Wet Paint", sans-serif;
+        width: 100%;
+        height: 100%;
+}
+.nav .animated-text text {
+        animation: stroke-draw 2s infinite alternate;
+        stroke-width: 2;
+        stroke: white;
+        font-size: 50px;
+}
+.nav button {
+        position: relative;
+        width: 60px;
+        height: 30px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 25px;
+}
+.nav button span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+        transition-duration: 200ms;
+}
+.nav button.light span {
+        left: 2.5px;
+}
+.nav button.dark span {
+        left: calc(100% - 23px);
+}
+.search-and-filter .row .item {
+        width: 90%;
+}
+.search-and-filter .container button {
+        position: relative;
+        background-color: #967b58;
+        overflow: hidden;
+}
+.search-and-filter .container button:hover {
+        border: 1px solid #967b58;
+}
+.search-and-filter .container button::before,
+.search-and-filter .container button::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: color-mix(in srgb, #967b58 80%, black 50%);
+        transform: translate(-175%, -50%) skew(45deg);
+        transition-duration: 500ms;
+}
+.search-and-filter .container button:hover::before {
+        transform: translate(-100%, -50%) skew(45deg);
+}
+.search-and-filter .container button::after {
+        transform: translate(75%, -50%) skew(45deg);
+}
+.search-and-filter .container button:hover::after {
+        transform: translate(0%, -50%) skew(45deg);
+}
+.search-and-filter .container button:focus::before,
+.search-and-filter .container button:focus::after {
+        background-color: color-mix(in srgb, #967b58 70%, black 60%);
+}
+.search-and-filter .container button span {
+        position: relative;
+        z-index: 1;
+        color: white;
+        transition-duration: 500ms;
+        font-weight: bold;
+        letter-spacing: 1px;
+}
+.news {
+        position: relative;
+}
+.news .div {
+        content: "";
+        position: fixed;
+}
+.news .div1 {
+        width: 20%;
+        height: 20%;
+        background-color: #0080006b;
+        animation: div1 5s linear 0s infinite normal both;
+}
+.news .div2 {
+        width: 20%;
+        height: 20%;
+        background-color: rgba(128, 0, 0, 0.418);
+        animation: div2 5s linear 0s infinite normal both;
+}
+.news .div3 {
+        width: 20%;
+        height: 20%;
+        background-color: #0080006b;
+        animation: div3 5s linear 0s infinite normal both;
+}
+.news .div4 {
+        width: 20%;
+        height: 20%;
+        background-color: rgba(128, 0, 0, 0.418);
+        animation: div4 5s linear 0s infinite normal both;
+}
+.news .div5 {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 213, 0, 0.281);
+        top: 80%;
+        left: 50%;
+        animation: div5 3s linear 0s infinite normal both;
+}
+.news .row .card {
+        width: 95%;
+        background: linear-gradient(45deg,  #022323aa, #043643aa, #022323aa);
+        backdrop-filter: blur(35px);
+        box-shadow: 0 0 25px -15px white inset;
+        transition-duration: 200ms;
+}
+.news .row .card:hover {
+        box-shadow: 0 0 25px -10px white inset;
+        background: linear-gradient(45deg,  #033434aa, #054353aa, #033434aa);
+        background-color: #967b58;
+        transform: translateY(-8px) scale(1.015);
+}
+.news .row .card a {
+        position: relative;
+        background-color: #967b58;
+        overflow: hidden;
+}
+.news .row .card a:hover {
+        border: 1px solid #967b58;
+}
+.news .row .card a::before,
+.news .row .card a::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: color-mix(in srgb, #967b58 80%, black 50%);
+        transform: translate(-175%, -50%) skew(45deg);
+        transition-duration: 250ms;
+}
+.news .row .card a:hover::before {
+        transform: translate(-100%, -50%) skew(45deg);
+}
+.news .row .card a::after {
+        transform: translate(75%, -50%) skew(45deg);
+}
+.news .row .card a:hover::after {
+        transform: translate(0%, -50%) skew(45deg);
+}
+.news .row .card a:focus::before,
+.news .row .card a:focus::after {
+        background-color: color-mix(in srgb, #967b58 70%, black 60%);
+}
+.news .row .card a span {
+        position: relative;
+        z-index: 1;
+        color: white;
+        transition-duration: 500ms;
+        font-weight: bold;
+        letter-spacing: 1px;
+}
+.news .row .card a:hover span {
+        filter: drop-shadow(0 0 1px white);
+}
+nav.pagination {
+        width: fit-content !important;
+}
+nav.pagination ul {
+        width: fit-content !important;
+}
+nav.pagination ul li a {
+        box-shadow: none !important;
+}

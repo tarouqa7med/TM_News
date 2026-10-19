@@ -19,30 +19,6 @@
         stroke: white;
         font-size: 50px;
 }
-.nav button {
-        position: relative;
-        width: 60px;
-        height: 30px;
-        background-color: transparent;
-        border: 2px solid white;
-        border-radius: 25px;
-}
-.nav button span {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        border-radius: 50%;
-        transition-duration: 200ms;
-}
-.nav button.light span {
-        left: 2.5px;
-}
-.nav button.dark span {
-        left: calc(100% - 23px);
-}
 .search-and-filter .row .item {
         width: 90%;
 }

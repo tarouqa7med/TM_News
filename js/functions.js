@@ -1,5 +1,5 @@
 
-async function getData(category = "business", search = "", page = 1) {
+async function getData(category, search, page = 1) {
         let params = new URLSearchParams({
                 category: category,
                 q: search,
@@ -60,7 +60,7 @@ function returnCard(item) {
                 <div class="col-lg-4 mb-5">
                         <div class="item">
                                 <div class="card text-light overflow-hidden">
-                                        <img class="mb-4" src="${item.urlToImage}" alt="" style="aspect-ratio: 16/9">
+                                        <img class="mb-4" src="${(item.urlToImage) ? item.urlToImage : './images/download.webp'}" onerror="this.src='./images/download.webp'" alt="" style="aspect-ratio: 16/9" onclick="window.location.href='${item.url}'">
                                         <h4 class="px-3 mb-3 title">${item.title.slice(0, 30)}...</h2>
                                         <h6 class="px-3 mb-3 description">${item.description}</h6>
                                         <h6 class="px-3 mb-3 publishedAt">Publication Date : ${item.publishedAt}</h6>
@@ -73,4 +73,3 @@ function returnCard(item) {
                 </div>
         `;
 }
-getData('business', '');

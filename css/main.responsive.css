@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 576px) {
+        .nav .animated-text text {
+                font-size: 45px;
+        }
+        .nav img {
+                width: 75px;
+        }
+        nav.pagination ul li a {
+                font-size: smaller;
+                padding: 12px;
+        }
+}
+@media screen and (max-width: 371px) {
+        .nav .animated-text text {
+                font-size: 30px;
+        }
+        nav.pagination ul li a {
+                font-size: smaller;
+                padding: 8px;
+        }
+}

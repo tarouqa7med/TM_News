@@ -62,14 +62,14 @@ function returnCard(item) {
                                 <div class="card text-light overflow-hidden">
                                         <img class="mb-4" src="${(item.urlToImage) ? item.urlToImage : './images/download.webp'}" onerror="this.src='./images/download.webp'" alt="" style="aspect-ratio: 16/9" onclick="window.location.href='${item.url}'">
                                         <div class="layout px-4">
-                                                <h4 class="mb-3 title text-center" style="height: 60px; overflow: hidden;">${item.title.slice(0, 50)}...</h2>
-                                                <h6 class="mb-3 description" style="height: 100px">${item.description}...</h6>
+                                                <h4 class="mb-3 title text-center">${item.title.slice(0, 25)}...</h2>
+                                                <h6 class="mb-3 description ${(item.description != null) ? '' : 'h-50'}">${(item.description != null) ? item.description : 'failed to load description'}...</h6>
                                                 <h6 class="mb-3 publishedAt">Publication Date : ${item.publishedAt}</h6>
                                                 <h6 class="mb-3 source">Source : ${item.source.name}</h6>
-                                                <a href="${item.url}" target="_blank" class="btn d-block m-auto mt-2 mb-4" style="width: 125px;">
-                                                        <span>See More</span>
-                                                </a>
                                         </div>
+                                        <a href="${item.url}" target="_blank" class="btn d-block m-auto mt-2 mb-4">
+                                                <span>See More</span>
+                                        </a>
                                 </div>
                         </div>
                 </div>

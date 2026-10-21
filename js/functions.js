@@ -3,9 +3,9 @@ async function getData(category, search, page = 1) {
         let params = new URLSearchParams({
                 category: category,
                 q: search,
-                from: "2026-09-19",
+                from: "2026-09-25",
                 sortBy: "publishedAt",
-                apiKey: "949a57d32a5a4921919bfbca115627af",
+                apiKey: "c823d92bd2b4425383c627e1f11217a9",
                 pageSize: 10,
                 page: page
         });
@@ -58,18 +58,22 @@ function paginate(page) {
 function returnCard(item) {
         return `
                 <div class="col-lg-4 mb-5">
-                        <div class="item">
+                        <div class="item m-auto">
                                 <div class="card text-light overflow-hidden">
                                         <img class="mb-4" src="${(item.urlToImage) ? item.urlToImage : './images/download.webp'}" onerror="this.src='./images/download.webp'" alt="" style="aspect-ratio: 16/9" onclick="window.location.href='${item.url}'">
-                                        <h4 class="px-3 mb-3 title">${item.title.slice(0, 30)}...</h2>
-                                        <h6 class="px-3 mb-3 description">${item.description}</h6>
-                                        <h6 class="px-3 mb-3 publishedAt">Publication Date : ${item.publishedAt}</h6>
-                                        <h6 class="px-3 mb-3 source">Source : ${item.source.name}</h6>
-                                        <a href="${item.url}" target="_blank" class="btn d-block m-auto mt-2 mb-4">
-                                                <span>See More</span>
-                                        </a>
+                                        <div class="layout px-4">
+                                                <h4 class="mb-3 title text-center" style="height: 60px; overflow: hidden;">${item.title.slice(0, 50)}...</h2>
+                                                <h6 class="mb-3 description" style="height: 100px">${item.description}...</h6>
+                                                <h6 class="mb-3 publishedAt">Publication Date : ${item.publishedAt}</h6>
+                                                <h6 class="mb-3 source">Source : ${item.source.name}</h6>
+                                                <a href="${item.url}" target="_blank" class="btn d-block m-auto mt-2 mb-4" style="width: 125px;">
+                                                        <span>See More</span>
+                                                </a>
+                                        </div>
                                 </div>
                         </div>
                 </div>
         `;
 }
+
+getData("business", '');

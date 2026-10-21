@@ -1,4 +1,10 @@
 
+@media screen and (max-width: 991.98px) {
+        .news .row .card {
+                margin: auto;
+                width: 90% !important;
+        }
+}
 @media screen and (max-width: 576px) {
         .nav .animated-text text {
                 font-size: 45px;

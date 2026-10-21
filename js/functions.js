@@ -57,13 +57,13 @@ function paginate(page) {
 
 function returnCard(item) {
         return `
-                <div class="col-lg-4 mb-5">
+                <div class="col-lg-4 col-md-6 mb-5">
                         <div class="item m-auto">
-                                <div class="card text-light overflow-hidden">
+                                <div class="card m-auto text-light overflow-hidden">
                                         <img class="mb-4" src="${(item.urlToImage) ? item.urlToImage : './images/download.webp'}" onerror="this.src='./images/download.webp'" alt="" style="aspect-ratio: 16/9" onclick="window.location.href='${item.url}'">
                                         <div class="layout px-4">
                                                 <h4 class="mb-3 title text-center">${item.title.slice(0, 25)}...</h2>
-                                                <h6 class="mb-3 description ${(item.description != null) ? '' : 'h-50'}">${(item.description != null) ? item.description : 'failed to load description'}...</h6>
+                                                <h6 class="mb-3 description" ${(item.description != null) ? '' : 'style="height: 65px;"'}>${(item.description != null) ? item.description : 'failed to load description'}...</h6>
                                                 <h6 class="mb-3 publishedAt">Publication Date : ${item.publishedAt}</h6>
                                                 <h6 class="mb-3 source">Source : ${item.source.name}</h6>
                                         </div>

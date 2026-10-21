@@ -81,7 +81,7 @@
         height: 20%;
         background-color: #0051806b;
         border-radius: 100%;
-        animation: div1 20s linear 0s infinite normal both;
+        animation: div1 10s linear 0s infinite normal both;
         filter: blur(35px);
 }
 .news .div2 {
@@ -89,7 +89,7 @@
         height: 20%;
         background-color: rgba(193, 87, 87, 0.418);
         border-radius: 100%;
-        animation: div2 20s linear 0s infinite normal both;
+        animation: div2 10s linear 0s infinite normal both;
         filter: blur(35px);
 }
 .news .div3 {
@@ -97,7 +97,7 @@
         height: 20%;
         background-color: #7c1fb16b;
         border-radius: 100%;
-        animation: div3 20s linear 0s infinite normal both;
+        animation: div3 10s linear 0s infinite normal both;
         filter: blur(35px);
 }
 .news .div4 {
@@ -105,7 +105,7 @@
         height: 20%;
         background-color: rgba(128, 0, 83, 0.418);
         border-radius: 100%;
-        animation: div4 20s linear 0s infinite normal both;
+        animation: div4 10s linear 0s infinite normal both;
         filter: blur(35px);
 }
 .news .div5 {
